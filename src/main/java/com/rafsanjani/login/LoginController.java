@@ -102,7 +102,9 @@ public class LoginController implements Initializable {
             stage.setScene(scene);
             stage.show();
         } else {
-            error.setText("Error");
+            userF.setText("");
+            passf.setText("");
+            error.setText("User doesn't exist!");
         }
     }
 
